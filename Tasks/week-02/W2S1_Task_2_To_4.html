@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Week Two Session One Exercises</title>
+
+    <style>
+        .border1 {
+            border: 2px lightcoral solid;
+            border-radius: 2rem;
+        }
+
+        nav {
+            margin: 2rem;
+            background: beige;
+            padding: 1rem;
+            display: inline-block;
+            font-family: "JetBrains Mono" , sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        a {
+            padding: 1rem;
+        }
+
+        section {
+            margin: 2rem;
+            border: 2px lightcoral solid;
+            border-radius: 2rem;
+            padding: 2rem;
+            background: beige;
+        }
+
+    </style>
+
+    <script src="W2S1_Task_4.js"></script>
+</head>
+
+<!-- Excercise Two -->
+<body>
+<div class="container">
+    <header>
+        <h1 class="text-center">
+            Tasks Two, Three and Four below
+        </h1>
+    </header>
+
+    <nav class="nav border1 align-middle p-3" id="top-of-page">
+        <h3 class="p-3">Jump to Section: </h3>
+        <div class="row pt-2">
+            <a href="#section-one">Page Colour</a>
+            <a href="#section-two">Page Style</a>
+            <a href="#section-three">Page Font</a>
+        </div>
+    </nav>
+
+    <section id="section-one">
+        <h2>Page Colour</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus neque quis purus dictum sagittis. Ut pharetra libero ac arcu dapibus pharetra. Nam non elit feugiat, mattis mi et, rhoncus lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus mauris, interdum id imperdiet sed, pellentesque sit amet lectus. Maecenas sed congue enim. Aliquam tincidunt felis quis erat hendrerit tristique. Mauris volutpat arcu ut ultrices egestas. Vestibulum fringilla neque a nisi volutpat hendrerit. Phasellus eros magna, rutrum quis nisi eu, convallis elementum lacus. Nulla facilisi. Donec lobortis mauris eu sapien elementum tempus. Praesent eget consectetur arcu. Sed sagittis elit.</p>
+
+        <!-- Exercise Three -->
+        <form id="colour-form">
+            <p>What colour would you like the background to be?</p>
+            <div class="form-group">
+                <label for="colour-input-text">Enter Colour Here:</label><br>
+                <input type="text" class="form-control" id="colour-input-text" name="color-input"><br>
+            </div>
+            <!-- Swapped out submit for button  -->
+            <input type="button" class="btn btn-primary" value="Change the background" onClick="backgroundChangeText()">
+            <div class="form-group">
+                <label for="colour-selector">or Select Colour Here:</label>
+                <input type="color" class="form-control" id="colour-selector" name="colour-selector"><br>
+            </div>
+            <!-- Swapped out submit for button  -->
+            <input type="button" class="btn btn-primary" value="Change the background" onClick="backgroundChangeColour()">
+        </form>
+        <script>
+            function backgroundChangeText() {
+                let colourInput = document.getElementById('colour-input-text').value;
+                document.body.style.backgroundColor = colourInput;
+                document.getElementById("colour-selector").value = colourInput
+            }
+            function backgroundChangeColour() {
+                let colourInput = document.getElementById('colour-selector').value;
+                document.body.style.backgroundColor = colourInput;
+                document.getElementById("colour-input-text").value = colourInput;
+            }
+        </script>
+    </section>
+
+    <!-- Exercise Four -->
+    <!-- Form Currently Does Not Return Info -->
+    <section id="section-two">
+        <h2>Shopping Search</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet interdum urna, tempus feugiat tellus efficitur eget. Morbi in ante interdum, semper elit sit amet, semper elit. Nulla ac ornare nisi. Praesent commodo sem eget neque porta pulvinar in aliquet ipsum. Suspendisse nec congue dui. Donec commodo nisi neque, et tempus ex vehicula non. Fusce tincidunt nibh et sapien malesuada euismod. Donec nec dui maximus, iaculis nulla sit amet, posuere odio. Mauris non egestas orci. Aliquam in velit finibus, efficitur velit sit amet, ornare enim. Nam aliquet vulputate commodo. Nulla facilisi. Morbi convallis rutrum sem, pellentesque ornare felis venenatis sit.</p>
+        <form id="shopping-search">
+            <div class="form-group">
+                <label for="keywords">Search Keywords:</label>
+                <input type="text" class="form-control" id="keywords" name="keywords">
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" class="form-control" name="category">
+                    <option value="shoes">Shoes</option>
+                    <option value="tshirt">Tshirt</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="size">Size:</label>
+                <select id="size" class="form-control" name="category">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" class="btn btn-secondary" value="Search">
+        </form>
+    </section>
+
+    <section id="section-three">
+        <h2>Page Font</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis diam vestibulum, mattis ante in, lacinia turpis. Mauris sed iaculis velit. Ut pulvinar maximus velit, id maximus risus pulvinar tincidunt. Aenean ligula massa, bibendum vitae nisi at, pellentesque porta nisi. Fusce ultricies vitae quam et aliquam. Curabitur at turpis ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean a sodales dui. Vivamus non vestibulum augue, vitae pharetra lorem. Aenean ex velit, viverra ac egestas vel, venenatis ut turpis. Duis ut enim erat. Suspendisse potenti. Mauris venenatis at nisl id tempor. Aliquam ut interdum nulla.
+
+        </p>
+    </section>
+
+    <nav>
+        <a href="#top-of-page">Top of Page</a>
+    </nav>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+
