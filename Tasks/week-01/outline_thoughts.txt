@@ -1,0 +1,41 @@
+Container 1
+    Gallery
+        Main Picture
+        3 Sub Pictures of Gallery
+    h1 text
+    p text
+    Check In Button
+        This has to generate Recent Checkins
+
+h2 text
+
+Container 2
+    Table
+        row 1
+            Column 1: Average rating    Colum2: 4 stars
+        row 2
+            Column 1: Another stat      Colum2: 78 rating
+        row 3
+            Column 1: Yet Another Stat  Column2: Somehting text
+
+h2 text
+
+Container 3
+    h3-Name    Star-Rating
+    p text
+    small date
+
+Container 4
+   repeat
+
+Additional containers added
+
+
+
+When on desktop:
+    Slightly wider
+    pictures apear to left of h1 text,p text and checkin button
+
+
+Issues encountered:
+    Getting things to display next to eachother (Fixed using table but not ideal, also used flex)

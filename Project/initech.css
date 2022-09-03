@@ -1,0 +1,268 @@
+
+/* Mobile */
+
+* {
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", sans-serif;
+
+}
+
+/* Box One */
+.container1 {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    margin: 0 15%;
+    padding: 1rem;
+}
+
+.gallerycontainer {
+    border-radius: 4px;
+}
+
+.galleryimages {
+    display: none;
+    max-width: 100%;
+
+}
+
+.thumbimages {
+    padding-top: 0.5rem;
+}
+
+.thumbimages::after {
+    content: "";
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 33.333%;
+}
+
+
+.c1 {
+    padding-right: 1rem;
+}
+
+.c2 {
+    padding: 0 0.5rem;
+}
+
+.c3 {
+    padding-left: 1rem
+}
+
+
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: normal;
+    font-size: 40pt;
+}
+
+.introbox {
+    padding: 0 2rem 2rem 0;
+}
+
+h2 {
+    margin: 2rem 15%;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-block-start: 0.5rem;
+}
+
+button {
+    color: white;
+    background: dodgerblue;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+/* Box two with tables */
+.container2 {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    margin: 2rem 15%;
+    padding: 1rem 2rem 2rem 2rem;
+    line-height: 2.5rem;
+}
+
+.cont2headers {
+    font-weight:bold;
+    word-wrap: break-word;
+    line-height: 1.5rem;
+    padding: 0.5rem;
+}
+
+.cont2headers span {
+    display:table;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+tr {
+    border-top: 1px solid lightgrey;
+}
+
+/* Box 3 and 4 with reviews */
+.container3 {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    margin: 2rem 15%;
+    padding: 2em;
+}
+
+h3 {
+
+}
+
+.nexto {
+    display: inline;
+}
+
+.container4 {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    margin: 0 15%;
+    padding: 2em;
+}
+
+
+
+/* Larger screens */
+
+@media only screen and (min-width: 820px) {
+
+    * {
+        box-sizing: border-box;
+        font-family: "JetBrains Mono", sans-serif;
+
+    }
+
+    /* Box One */
+    .container1 {
+        border: 1px solid lightgrey;
+        border-radius: 4px;
+        margin: 0 15%;
+        display: flex;
+        padding: 1rem;
+    }
+
+    .gallerycontainer {
+        border-radius: 4px;
+        width: 50%;
+    }
+
+    .galleryimages {
+        display: none;
+        max-width: 500px;
+
+    }
+
+    .thumbimages {
+
+    }
+
+    .thumbimages::after {
+        content: "";
+        clear: both;
+    }
+
+    .column {
+        float: left;
+        width: 33.333%;
+    }
+
+    .c1 {
+        padding-right: 1rem;
+    }
+
+    .c2 {
+        padding: 0 0.5rem;
+    }
+
+    .c3 {
+        padding-left: 1rem
+    }
+
+    h1 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-weight: normal;
+    }
+
+    .introbox {
+        width: 50%;
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    h2 {
+        margin: 2rem 15%;
+    }
+
+    p {
+        line-height: 1.5rem;
+        margin-block-start: 0.5rem;
+    }
+
+    button {
+        color: white;
+        background: dodgerblue;
+        padding: 0.5rem 0.75rem;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /* Box two with tables */
+    .container2 {
+        border: 1px solid lightgrey;
+        border-radius: 4px;
+        margin: 2rem 15%;
+        padding: 1rem 2rem 2rem 2rem;
+        line-height: 2.5rem;
+    }
+    .cont2headers {
+        font-weight:bold;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%
+    }
+
+    tr {
+        border-top: 1px solid lightgrey;
+    }
+
+    /* Box 3 and 4 with reviews */
+    .container3 {
+        border: 1px solid lightgrey;
+        border-radius: 4px;
+        margin: 2rem 15%;
+        padding: 2em;
+    }
+
+    h3 {
+
+    }
+
+    .nexto {
+        display: inline;
+    }
+
+    .container4 {
+        border: 1px solid lightgrey;
+        border-radius: 4px;
+        margin: 0 15%;
+        padding: 2em;
+    }
+
+}
+

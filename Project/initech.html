@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Initech Really Cool Things</title>
+    <script src="initech.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="initech.css">
+</head>
+
+<body>
+<!-- Gallery and Check In Button Box -->
+<div class="container1">
+    <div class="gallerycontainer">
+        <!-- Full size images -->
+        <div class="galleryimages" style="display: inline;">
+            <img src="./Week_1_Assets/Cat1_1920by920.jpg" alt="Large image of black and white kitten touching flower on cobbles" style="width:100%" >
+        </div>
+        <div class="galleryimages">
+            <img src="./Week_1_Assets/Cat2_1920by920.jpg" alt="Large picture of fat striped cat sat on bottom like human facing camera" style="width:100%" >
+        </div>
+        <div class="galleryimages">
+            <img src="./Week_1_Assets/Cat3_1920by920.jpg" alt="Large image of kitten on brown rug looking up at camera" style="width:100%" >
+        </div>
+
+        <!-- Thumnail Images -->
+        <div class="thumbimages">
+            <div class="column">
+                <img class="c1" src="./Week_1_Assets/Cat1_Small.jpg" alt="Small image of black and white kitten touching flower on cobbles" onclick="currentSlide(1)" style="width:100%" >
+            </div>
+
+            <div class="column">
+                <img class="c2" src="./Week_1_Assets/Cat2_Small.jpg" alt="Small picture of fat striped cat sat on bottom like human facing camera" onclick="currentSlide(2)" style="width:100%" >
+            </div>
+
+            <div class="column">
+                <img class="c3" src="./Week_1_Assets/Cat3_Small.jpg" alt="Small image of kitten on brown rug looking up at camera" onclick="currentSlide(3)" style="width:100%" >
+            </div>
+        </div>
+    </div>
+
+    <div class="introbox">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad beatae consectetur cumque cupiditate distinctio doloribus eum ex excepturi harum hic, impedit iure minima placeat possimus qui sit sunt totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur cum distinctio inventore ipsa laudantium molestias nam nesciunt nisi, officia rem voluptate. Animi consequuntur iure maiores, officia quis velit vitae.</p>
+        <button>Check In</button>
+    </div>
+</div>
+
+<!-- Additional Information heading + Stats Container Below -->
+<h2>Additional Information</h2>
+
+<div class="container2">
+    <table>
+        <tbody>
+        <tr>
+            <td class="cont2headers">
+                Average <span>Rating</span>
+            </td>
+            <td>
+                <img src="./Week_1_Assets/stars.png" alt="4 out of 5 stars image">
+            </td>
+        </tr>
+        <tr>
+            <td class="cont2headers">
+                Another <span>Statistic</span>
+            </td>
+            <td>
+                78/100
+            </td>
+        </tr>
+
+        <tr>
+            <td class="cont2headers">
+                Yet Another <span>Statistic</span>
+            </td>
+            <td>
+                Something
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Recent Check-Ins Containers (Should also add more containers when button clicked and added) -->
+<h2>Recent Check-Ins</h2>
+
+<div class="container3">
+    <h3 class="nexto">Joe Bloggs</h3>
+    <img class="nexto" src="./Week_1_Assets/stars.png" alt="4 out of 5 stars image">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi, debitis ducimus eius eos explicabo, facere, harum labore mollitia non optio quidem quo repudiandae tenetur voluptatem. Dolorum harum inventore ipsum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum iure laudantium provident quae quis quo soluta? A ad amet aperiam doloremque, eos, incidunt optio provident quod repudiandae similique ut.
+    </p>
+    <small>
+        3rd August, 2020
+    </small>
+
+</div>
+
+<div class="container4">
+    <h3 class="nexto">Joe Bloggs</h3>
+    <img class="nexto" src="./Week_1_Assets/stars.png" alt="4 out of 5 stars image">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi, debitis ducimus eius eos explicabo, facere, harum labore mollitia non optio quidem quo repudiandae tenetur voluptatem. Dolorum harum inventore ipsum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum iure laudantium provident quae quis quo soluta? A ad amet aperiam doloremque, eos, incidunt optio provident quod repudiandae similique ut.
+    </p>
+    <small>
+        24th July, 2020
+    </small>
+
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
