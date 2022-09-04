@@ -38,3 +38,11 @@
   - Update the page from the first task to implement the supplied API which provides mock check-in data.
     Instead of hard-coded check-ins, this time you’ll need to display them from the data retrieved via the API. At
     this stage, you may display a number for the rating (ie without the stars).
+- [ ] Create a dynamic star rating for reviews
+  - Your star rating HTML should look something like the following (if the rating is 4 stars): 
+  ```
+    <div style="width:80%"></div></div>
+    ```
+- [ ] Stretch goal: Display an aggregated rating at the top pf the page
+  - Replace the hard-coded star rating at the top of the page with an average rating based on the check-ins
+    retrieved via the API.
