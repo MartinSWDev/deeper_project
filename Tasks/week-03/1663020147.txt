@@ -1,0 +1,1 @@
+O:11:"Calculation":4:{s:9:"timestamp";s:16:"13-09-2022 00:02";s:1:"a";s:1:"7";s:9:"operation";s:3:"add";s:1:"b";s:1:"6";}

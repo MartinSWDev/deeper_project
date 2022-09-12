@@ -51,7 +51,8 @@ if(!empty($_GET)) {
 
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -68,7 +69,7 @@ if(!empty($_GET)) {
     <title>Calculator</title>
 </head>
 <body>
-<container class="container">
+<div class="container">
     <div class="m-5">
         <h1 class="p-3">Welcome To The Calculator</h1>
         <form id="calcform" method="get">
@@ -101,10 +102,11 @@ if(!empty($_GET)) {
         <h2>Previous Calculations</h2>
         <table class="table table-striped">
             <thead>
-            <th scope="col">Timestamp</th>
-            <th scope="col">Value of A</th>
-            <th scope="col">Operation</th>
-            <th scope="col">Value of B</th>
+            <tr>
+                <th scope="col">Timestamp</th>
+                <th scope="col">Value of A</th>
+                <th scope="col">Operation</th>
+            </tr>
             </thead>
             <tbody>
             <?php
@@ -125,7 +127,7 @@ if(!empty($_GET)) {
 
         <script>
             window.addEventListener('DOMContentLoaded', function() {
-                $(".table tr").click(function (e) {
+                $(".table tr").click(function () {
                     $(this).children("td").each(function (index) {
                         if (index === 0) {
                             $("#a").val(this.innerText);
@@ -136,6 +138,7 @@ if(!empty($_GET)) {
                         if (index === 2) {
                             $("#b").val(this.innerText);
                         }
+                        $("#answer").val(null);
                     })
 
                 })
@@ -145,6 +148,7 @@ if(!empty($_GET)) {
                     e.preventDefault();
                     calculator();
                 });
+
             });
 
             function calculator() {
@@ -152,7 +156,7 @@ if(!empty($_GET)) {
                 let b = $('#b').val();
                 let op = $('#operation').children('option:selected').val();
 
-                axios.get("excercise5to8.php?a=" + a + '&b=' + b + '&operation=' + op)
+                axios.get("W3S1_Task_5_To_8.php?a=" + a + '&b=' + b + '&operation=' + op)
                     .then(res => {
                         console.log(res.data);
                         $("#answer").val(res.data);
